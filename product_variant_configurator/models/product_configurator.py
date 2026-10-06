@@ -12,7 +12,7 @@ _logger = logging.getLogger(__name__)
 
 
 class ProductConfigurator(models.AbstractModel):
-    _name = "product.configurator"
+    _name = "product.variant.configurator.mixin"
     _description = "Product Configurator"
     _partner_id_field = "partner_id"
 

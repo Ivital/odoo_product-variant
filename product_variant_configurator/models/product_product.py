@@ -8,7 +8,7 @@ from odoo.tools import config
 
 
 class ProductProduct(models.Model):
-    _inherit = ["product.product", "product.configurator"]
+    _inherit = ["product.product", "product.variant.configurator.mixin"]
     _name = "product.product"
 
     def _get_product_attributes_values_dict(self):

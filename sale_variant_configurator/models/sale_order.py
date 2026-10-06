@@ -20,7 +20,7 @@ class SaleOrder(models.Model):
 
 
 class SaleOrderLine(models.Model):
-    _inherit = ["sale.order.line", "product.configurator"]
+    _inherit = ["sale.order.line", "product.variant.configurator.mixin"]
     _name = "sale.order.line"
     _partner_id_field = "order_partner_id"
 
